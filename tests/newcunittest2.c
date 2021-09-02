@@ -24,7 +24,7 @@ int clean_suite(void) {
 
 void testMostrarI() {
     int vector[]={1,2,3};
-    size_t tamano=3;
+    size_t tamano=lenght(vector);
     
     CU_ASSERT(MostrarI(vector, tamano));
     
@@ -32,7 +32,7 @@ void testMostrarI() {
 
 void testMostrarD() {
     double vector[]={1.2,2.3};
-    size_t tamano=2;
+    size_t tamano=lenght(vector);
     CU_ASSERT(MostrarD(vector, tamano));
     
 }
