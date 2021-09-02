@@ -40,7 +40,6 @@ void testMostrarD() {
 void testMostrarC() {
     char vector[]={'a','b'};
     size_t tamano=lenght(vector);
-   
     CU_ASSERT(MostrarC(vector, tamano));
     
 }

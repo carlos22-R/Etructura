@@ -28,6 +28,7 @@ void testOrdenI() {
    
         CU_ASSERT(OrdenI(vector, tamano));
         CU_ASSERT(vector[0]<vector[1]);
+        CU_ASSERT(vector[tamano-1]>vector[tamano-2]);
     
 }
 
@@ -37,6 +38,7 @@ void testOrdenD() {
    
         CU_ASSERT(OrdenD(vector, tamano));
         CU_ASSERT(vector[0]<vector[1]);
+        CU_ASSERT(vector[tamano-1]>vector[tamano-2]);
     
 }
 
@@ -47,6 +49,7 @@ void testOrdenC() {
     
         CU_ASSERT(result);
         CU_ASSERT(vector[0]<vector[1]);
+        CU_ASSERT(vector[tamano-1]>vector[tamano-2]);
     
 }
 
@@ -57,6 +60,7 @@ void testOrdenF() {
     
         CU_ASSERT(result);
         CU_ASSERT(vector[0]<vector[1]);
+        CU_ASSERT(vector[tamano-1]>vector[tamano-2]);
     
 }
 

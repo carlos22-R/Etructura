@@ -183,3 +183,44 @@ int i, j, aux;
         return 0;
     }
 }
+//cambio
+int DatoI(int *vector ,size_t tamano, size_t posicion,int cambio){
+    if(tamano>posicion && posicion>=0 && tamano>0){
+        vector[posicion]=cambio;
+        return 1;
+    }else{
+        puts("error en ingresar datos");
+        return 0;
+    }
+    
+}
+int DatoD(double *vector ,size_t tamano, size_t posicion,double cambio){
+    if(tamano>posicion && posicion>=0 && tamano>0){
+        vector[posicion]=cambio;
+        return 1;
+    }else{
+        puts("error en ingresar datos");
+        return 0;
+    }
+    
+}
+int DatoC(char *vector ,size_t tamano, size_t posicion,char cambio){
+    if(tamano>posicion && posicion>=0 && tamano>0){
+        vector[posicion]=cambio;
+        return 1;
+    }else{
+        puts("error en ingresar datos");
+        return 0;
+    }
+    
+}
+int DatoF(float *vector ,size_t tamano, size_t posicion,float cambio){
+    if(tamano>posicion && posicion>=0 && tamano>0){
+        vector[posicion]=cambio;
+        return 1;
+    }else{
+        puts("error en ingresar datos");
+        return 0;
+    }
+    
+}

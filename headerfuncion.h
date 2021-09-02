@@ -23,12 +23,20 @@
               float*: MostrarF, \
               char*: MostrarC \
 )(vector,tamano)
+//cambio de variable
 #define Ordenar(vector,tamano) _Generic((vector), \
               int*: OrdenI, \
               double*: OrdenD,  \
               float*: OrdenF, \
               char*: OrdenC \
 )(vector,tamano)
+//cambiar dato
+#define Dato(vector,tamano,posicion,cambio) _Generic((vector), \
+              int*: DatoI, \
+              double*: DatoD,  \
+              float*: DatoF, \
+              char*: DatoC \
+)(vector,tamano,posicion,cambio)
 //mostrar datos
 int MostrarI(int *vector, size_t tamano);
 int MostrarD(double *vector, size_t tamano);
@@ -39,6 +47,11 @@ int OrdenI(int *vector,size_t tamano);
 int OrdenD(double *vector,size_t tamano);
 int OrdenC(char *vector,size_t tamano);
 int OrdenF(float *vector,size_t tamano);
+//cambio 
+int DatoI(int *vector ,size_t tamano, size_t posicion,int cambio);
+int DatoD(double *vector ,size_t tamano, size_t posicion,double cambio);
+int DatoC(char *vector ,size_t tamano, size_t posicion,char cambio);
+int DatoF(float *vector ,size_t tamano, size_t posicion, float cambio);
 
 #endif /* HEADERFUNCION_H */
 

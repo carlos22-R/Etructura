@@ -8,9 +8,11 @@ int main(int argc, char** argv) {
     float arrayf[]={1.3,2.3,3.2,4.2};
     double arrayd[]={1.3,2.3,3.2,4.2};
     char arrayc[]={'c','d','a','b','A'};
-    size=lenght(array);
-    Ordenar(arrayc,5);
-    Mostrar(arrayc,5);
+    size=lenght(arrayd);
+    Ordenar(arrayd,size);
+    
+    Dato(arrayd,size,3,3.2);
+    Mostrar(arrayd,size);
     return (EXIT_SUCCESS);
 }
 
